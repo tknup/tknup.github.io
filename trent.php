@@ -1,5 +1,6 @@
 
 <!-- saved from url=(0046)http://home.comcast.net/~allstarn64/trent.html -->
+<?php include("/home/tknup/pass/password_protect.php"); ?>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>TRENT LOVES FARTS</title>
 <link rel="icon" href="http://home.comcast.net/~allstarn64/trent/favicon.ico">
