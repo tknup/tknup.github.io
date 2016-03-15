@@ -123,7 +123,7 @@ footer {
 }
 
 .navbar-default {
-    border-color: rgba(35,35,35);
+    border-color: transparent;
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
     background-color: #222;
 	color: #fff;
@@ -134,7 +134,7 @@ footer {
 /* 5A Rent A Space in Nav Bar */
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-	border-color: rgba(35,35,35);
+	border-color: transparent;
 	text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
@@ -187,8 +187,8 @@ footer {
 /* Nav Bar black with 50% transparency */
 @media(min-width:768px) {
     .navbar-default {
-        border-color: #fff;
-        background-color: rgba(255,255,255, 0.5);
+        border-color: transparent;
+        background-color: rgba(0,0,0, 0.5);
         min-height: 60px;
     }
 
@@ -500,16 +500,17 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn.btn-primary {
-    background-color: transparent;
-    border:1px solid #f0f0f0;
+    background-color: #222;
+    border:3px solid #f0f0f0;
     border-color:#f0f0f0;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+	opacity: 0.7;
 }
 
 .btn.btn-primary:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .btn {
