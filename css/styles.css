@@ -156,6 +156,7 @@ footer {
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
+	
 }
 
 .navbar-default .nav > li>a,
@@ -183,7 +184,7 @@ footer {
     background-color: transparent;
 }
 
-/* Nav Bar white with 50% transparency */
+/* Nav Bar black with 50% transparency */
 @media(min-width:768px) {
     .navbar-default {
         border-color: #fff;
