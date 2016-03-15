@@ -568,15 +568,15 @@ img::-moz-selection {
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 50%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #222;
-	background: -moz-linear-gradient(#222, #000);
-	background: -webkit-linear-gradient(#222, #000);
-	background: -o-linear-gradient(#222, #000);
+	background: -moz-linear-gradient(#222, #222);
+	background: -webkit-linear-gradient(#222, #222);
+	background: -o-linear-gradient(#222, #222);
 }
 .close {
 	background: #606061;
