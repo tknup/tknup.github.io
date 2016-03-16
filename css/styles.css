@@ -573,7 +573,7 @@ img::-moz-selection {
 }
 
 .modalDialog > div {
-	width: 75%;
+	width: 70%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
