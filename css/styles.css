@@ -546,6 +546,11 @@ img::-moz-selection {
     background: 0 0;
 }
 
+/* icon resize smaller */
+.smaller {
+	font-size: 40px;
+}
+
 /* modal window */
 .modalDialog {
 	position: fixed;
