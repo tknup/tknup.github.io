@@ -573,9 +573,9 @@ img::-moz-selection {
 }
 
 .modalDialog > div {
-	width: 70%;
+	max-width: 800px;
 	position: relative;
-	margin: 10% auto;
+	margin: 2% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #222;
@@ -601,5 +601,4 @@ img::-moz-selection {
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
-
 .close:hover { background: #00d9ff; }
