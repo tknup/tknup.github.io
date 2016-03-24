@@ -71,6 +71,16 @@ p {
     line-height: 18px;
 }
 
+.icon-md {
+    font-size: 25px;
+    line-height: 9px;
+}
+
+.icon-sm {
+    font-size: 12px;
+    line-height: 4px;
+}
+
 .bg-primary {
     background-color: #333;
 }
