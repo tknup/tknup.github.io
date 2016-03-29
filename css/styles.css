@@ -664,3 +664,21 @@ img::-moz-selection {
     -moz-column-rule-width: 1px; /* Firefox */
     column-rule-width: 1px;
 }
+/* Calculator */
+
+#calc-form-container { width : 95%; display : block; margin-left : auto; margin-right : auto; background-color : rgba(0, 0, 0, .05); border-radius : 3px; border : 1px solid #ccc; font-size : 1.1em; }
+#calc-box { display : table; width : 100%; background-color : rgba(0, 0, 0, .10); border-bottom : 1px solid #fff; }
+#calc-box .calc-box-section { width : 50%; display : table-cell; font-size : 1.5em; padding : 10px; text-align : center; }
+#calc-box .calc-box-section span { font-weight : bolder; margin-left : .5em; }
+#calc-items, #calc-items ul { list-style : none; margin : 0; }
+#calc-items li h3 { display : block; padding : 5px; margin : 0; background-color : rgba(0, 0, 0, .05); border-top : 1px solid #fff; border-bottom : 1px solid #fff; }
+.calc-inner { display : block; padding : 10px; }
+.calc-inner p { display : inline-block; padding : 5px; width : 275px; margin : 0; }
+.calc-inner p input { width : 3em; text-align : center; }
+nav.post-nav ul.pager { list-style : none; height : 1.5em; }
+nav.post-nav ul.pager li { display : inline-block; }
+nav.post-nav ul.pager li.previous { float : left; }
+nav.post-nav ul.pager li.next { float : right; }
+
+#calc-box { display : block; }
+    #calc-box .calc-box-section { width : 100%; display : block; }

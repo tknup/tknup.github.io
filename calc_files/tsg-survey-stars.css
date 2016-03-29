@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul.tsgStarRating {list-style:none !important; display: inline-block; height: 1.5em; margin: 8px 5px 8px 5px; text-align: left;}
+ul.tsgStarRating li {display: inline-block; width: 1.5em; height: 1.5em; position: relative; margin: 0 .1em 0 .1em;}
+ul.tsgStarRating li:after {content: "";}
+ul.tsgStarRating li i {font-size: 1.5em; position: absolute; left: 0 !important; top0 !important; right: 0 !important; bottom: 0; !important}
+ul.tsgStarRating li i.fa-star, ul.tsgStarRating li i.fa-star-half {color: #FFBF00; opacity: .8;}
+
+.sidebar ul.tsgStarRating .fa {top: 0 !important; right: 0 !important;}
+
+.redyellow ul.rating1 i.fa-star, .redyellow ul.rating1 i.fa-star-half {color: #ff0000;} .redyellow ul.rating1h i.fa-star, .redyellow ul.rating1h i.fa-star-half {color: #ff1f00;} .redyellow ul.rating2 i.fa-star, .redyellow ul.rating2 i.fa-star-half {color: #ff3f00;} .redyellow ul.rating2h i.fa-star, .redyellow ul.rating2h i.fa-star-half {color: #ff5f00;} .redyellow ul.rating3 i.fa-star, .redyellow ul.rating3 i.fa-star-half {color: #ff7f00;} .redyellow ul.rating3h i.fa-star, .redyellow ul.rating3h i.fa-star-half {color: #ff9f00;} .redyellow ul.rating4 i.fa-star, .redyellow ul.rating4 i.fa-star-half {color: #ffbf00;} .redyellow ul.rating4h i.fa-star, .redyellow ul.rating4h i.fa-star-half {color: #ffdf00;} .redyellow ul.rating5 i.fa-star, .redyellow ul.rating5 i.fa-star-half {color: #ffff00;}
+
+
+.redyellowgreen ul.rating1 i.fa-star, .redyellowgreen ul.rating1 i.fa-star-half {color: #ff0000;} .redyellowgreen ul.rating1h i.fa-star, .redyellowgreen ul.rating1h i.fa-star-half {color: #ff3f00;} .redyellowgreen ul.rating2 i.fa-star, .redyellowgreen ul.rating2 i.fa-star-half {color: #ff7f00;} .redyellowgreen ul.rating2h i.fa-star, .redyellowgreen ul.rating2h i.fa-star-half {color: #ffbf00;} .redyellowgreen ul.rating3 i.fa-star, .redyellowgreen ul.rating3 i.fa-star-half {color: #ffff00;} .redyellowgreen ul.rating3h i.fa-star, .redyellowgreen ul.rating3h i.fa-star-half {color: #bfff00;} .redyellowgreen ul.rating4 i.fa-star, .redyellowgreen ul.rating4 i.fa-star-half {color: #7fff00;} .redyellowgreen ul.rating4h i.fa-star, .redyellowgreen ul.rating4h i.fa-star-half {color: #3fff00;} .redyellowgreen ul.rating5 i.fa-star, .redyellowgreen ul.rating5 i.fa-star-half {color: #0fff00;}
