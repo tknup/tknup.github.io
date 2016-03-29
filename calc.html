@@ -111,7 +111,7 @@ var tsg_survey_script = {"ajaxurl":"https:\/\/www.storagecenteronsullivantrail.c
 		} );
 		jQuery( function ( $ ) {
 			jQuery( '#calc-form input' ).change( function () {
-				jQuery.post( 'https://www.storagecenteronsullivantrail.com/wp-admin/admin-ajax.php', $( this.form ).serialize(), function ( data ) {
+				jQuery.post( './calc_files/admin-ajax.php', $( this.form ).serialize(), function ( data ) {
 					jQuery( '#est-value' ).html( data.total );
 					jQuery( '#est-size' ).html( data.recommend );
 				}, 'json' );
