@@ -62,9 +62,7 @@
                     <li>
                         <a class="page-scroll" href="#three">Gallery</a>
                     </li>
-                    <!--<li>
-                        <a class="page-scroll" href="#four">Features</a>
-                    </li>-->
+                    
                     <!--<li>
                         <a class="page-scroll" href="#last">Contact</a>
                     </li>-->
@@ -72,6 +70,9 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <a class="page-scroll" data-toggle="modal" href="#calcModal">Storage Calculator</a>
+                    </li>
+					<li>
                         <a class="page-scroll" data-toggle="modal" href="#specialModal">Specials</a>
                     </li>
                 </ul>
@@ -91,7 +92,7 @@
         </div>
         
         <video autoplay loop class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/Traffic-blurred2.jpg" id="video-background">
-            <source src="img/lahaina.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="img/lahaina.mp4" type="video/mp4">Your browser does not support the video tag. It is suggested that you upgrade your browser.
         </video>
         
     </header>
@@ -763,6 +764,29 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         </div>
         </div>
     </div>
+	
+    <!-- Storage Front Calc Pop Try #2 -->
+	<!-- Modal -->
+<div class="modal fade" id="calcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Storage Calculator</h4>
+      </div>
+      <div class="modal-body">
+          <iframe src="https://www.storagefront.com/calculator/additems" width="800" height="800" frameborder="0" allowtransparency="true"></iframe>  
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+        
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
     <!-- Constant Contact Form -->
      <div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">

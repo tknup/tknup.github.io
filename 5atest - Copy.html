@@ -62,9 +62,7 @@
                     <li>
                         <a class="page-scroll" href="#three">Gallery</a>
                     </li>
-                    <!--<li>
-                        <a class="page-scroll" href="#four">Features</a>
-                    </li>-->
+                    
                     <!--<li>
                         <a class="page-scroll" href="#last">Contact</a>
                     </li>-->
@@ -72,6 +70,9 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <a class="page-scroll" data-toggle="modal" href="#calcModal">Storage Calculator</a>
+                    </li>
+					<li>
                         <a class="page-scroll" data-toggle="modal" href="#specialModal">Specials</a>
                     </li>
                 </ul>
@@ -91,7 +92,7 @@
         </div>
         
         <video autoplay loop class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/Traffic-blurred2.jpg" id="video-background">
-            <source src="img/lahaina.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="img/lahaina.mp4" type="video/mp4">Your browser does not support the video tag. It is suggested that you upgrade your browser.
         </video>
         
     </header>
@@ -126,7 +127,7 @@
             <!-- START Foster City Zone -->
             <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
-                    <a href="#openModal" title="Click Here For Location Info!"><i class="icon-lg ion-ios-search wow fadeIn" data-wow-delay=".2s"></i>
+                    <a href="#fcsiteModal" class="gallery-box" data-toggle="modal" data-src="img/fc.jpg" title="Click Here For Location Info!">
                     <h2>Foster City, CA</h2> 
  <img src="img/fc.jpg" alt="5afc" name="5afc" width="75%">
  
@@ -164,7 +165,7 @@
            <!-- START Moraga Zone -->
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
-                        <a href="#openModal2" title="Click Here For Location Info!"><i class="icon-lg ion-ios-search wow fadeIn" data-wow-delay=".2s"></i>
+                        <a href="#mositeModal" class="gallery-box" data-toggle="modal" data-src="img/mo.jpg" title="Click Here For Location Info!">
                         <h2>Moraga, CA</h2>
                         <img src="img/mo.jpg" alt="5amo" name="5amo" width="75%">
                         </a>
@@ -201,8 +202,8 @@
                 <!-- START Lahaina Zone -->
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
-                        <a href="#openModal3" title="Click Here For Location Info!">
-                        <i class="icon-lg ion-ios-search wow fadeIn" data-wow-delay=".2s"></i>
+                        <a href="#lasiteModal" class="gallery-box" data-toggle="modal" data-src="img/maui.jpg" title="Click Here For Location Info!">
+                        
                         <h2>Lahaina, HI</h2>
                         <img src="img/maui.jpg" alt="5amaui" name="5amaui" width="75%">
                         </a>
@@ -449,7 +450,7 @@
                         <li><a class="page-scroll" data-toggle="modal" href="#specialModal">Specials</a></li>
                         <li><a class="page-scroll" data-toggle="modal" href="#couponModal">Coupon</a></li>
                         <li><a class="page-scroll" data-toggle="modal" href="#communityModal">Community</a></li>
-                       
+                        <!--<li><a class="page-scroll" data-toggle="modal" href="#">Storage Space Calculator</a></li>-->
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-3 column">
@@ -518,8 +519,8 @@ We have been in the storage business for over 45 years and one of the key factor
 Our integrity is irreplaceable and ever present in our minds. With that in mind, we strive to continue making good business and customer service decisions and to stand behind them.
         		</p>
         		<!--<p class="text-center"><a href="http://5aspace.com">See the old site at 5aspace.com</a></p>-->
-        		<br/>
-        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE </button>
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE </button></p>
         	</div>
         </div>
         </div>
@@ -531,8 +532,9 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         		<h2 class="text-center">Nice Job!</h2>
         		<p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo but this feature is coming soon!</p>
         		<!--<p class="text-center"><a href="http://5aspace.com">Compare with the old site at 5aspace.com</a></p>-->
-        		<br/>
+        		<p><br/>
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
         	</div>
         </div>
         </div>
@@ -545,8 +547,98 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         		<h2 class="text-center">Current Specials!</h2>
         		<p class="text-center">
                 <br/><img src="img/special.jpg" alt="5amaui" name="5amaui" width="60%"></p>
-        		<br/>
+        		<p><br/>
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- Storage Space Calc Pop -->
+    <div id="calcModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Storage Space Calculator</h2>
+        		<iframe src="/calc.html" width="600" height="600" align="center"></iframe>
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+        <!-- FC Sites Pop -->
+    <div id="fcsiteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+         	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Foster City, CA</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center">
+                <br/><img src="img/fc.jpg" alt="5afostercity" name="5afostercity" width="60%"></p>
+        		<br/>
+               <p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-650-338-0013">(650) 338-0013</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:foster_city@5aspace.com" target="_blank">foster_city@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="https://www.google.com/maps?q=1221+east+hillsdale+blvd,+foster+city,+CA+94404" target="_blank">1221 E Hillsdale Blvd Foster City, CA 94404</a></i></p>
+        <p style="font-size:16px;line-height:1;margin-bottom:0px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm &amp; Sunday 7am-2:45pm
+        </p>
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- MO Sites Pop -->
+    <div id="mositeModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Moraga, CA</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center">
+                <br/><img src="img/mo.jpg" alt="5amoraga" name="5amoraga" width="60%"></p>
+        		<br/>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-925-643-2024">(925) 643-2024</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:moraga@5aspace.com" target="_blank">moraga@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=455+moraga+Road%2C+moraga%2C+CA+94556" target="_blank">455 Moraga Rd Ste F Moraga, CA 94556</a></i></p>
+        <p style="font-size:16px;line-height:1;margin-bottom:0px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm Sunday &amp; 9am-5:45pm
+        </p>
+		<a href="#retailmoModal" data-toggle="modal"><h4 style="line-height:1;margin-bottom:0px;text-align:center">Retail Store Coupons!</h4></a>
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- LA Sites Pop -->
+    <div id="lasiteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Lahaina, HI</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center !important;">
+                <br/><img src="img/maui.jpg" alt="5amaui" name="5amaui" width="60%"></p>
+        		<br/>
+                <p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-808-745-1616">(808) 745-1616</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:lahaina@5aspace.com" target="_blank">lahaina@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=3600+Lower+Honoapiilani+Road%2C+Lahaina%2C+HI+96761" target="_blank">3600 L Honoapiilani Rd Lahaina, HI 96761</a></i></p>
+         <p style="font-size:16px;line-height:1;margin-bottom:10px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm &amp; Sunday 7am-2:45pm
+        </p>
+        <a href="#retailModal" data-toggle="modal"><h4 style="line-height:1;margin-bottom:0px;text-align:center">Retail Store Coupons!</h4></a>
+        
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
         	</div>
         </div>
         </div>
@@ -558,68 +650,65 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         	<div class="modal-body">
             
         		<h1 class="text-center">Community Links</h1>
-                <div class="newspaper">
-        		<p class="text-center">
-                <div id="c1"><h1 class="f-fp"><a href="http://www.fostercity.org" target="_blank" rel="nofollow">Foster City Information</a></h1>
-		<p><a href="http://fostercity.org/Services/safety/fire/index.cfm" target="_blank" rel="nofollow">FOSTER CITY CERT</a></p>
-		<p><a href="http://www.co.sanmateo.ca.us" target="_blank" rel="nofollow">SAN MATEO COUNTY</a></p>
-		<p><a href="http://www.smccd.net" target="_blank" rel="nofollow">COMMUNITY COLLEGE</a></p>
-		<p><a href="http://www.fostercitychamber.com" target="_blank" rel="nofollow">FOSTER CITY CHAMBER</a></p>
-		<dl>
-			<dd><span class="style44">Also includes “SCORE” 'Senior Citizen’s Organization of Retired Executives'</span></dd>
-		</dl>
-		<p><a href="http://www.peninsulaMusicalArts.org" target="_blank" rel="nofollow">SYMPHONY AND THE ARTS</a></p>
-		<p><a href="http://www.hillbarntheatre.org" target="_blank" rel="nofollow">HILLBARN THEATRE</a></p>
-		<p><a href="http://www.fostercityrotary.org" rel="nofollow" target="_blank">FOSTER CITY ROTARY</a></p>
-		<p><a href="http://www.commute.org" target="_blank" rel="nofollow">FREE SHUTTLE BUS</a></p>
-		<p><a href="http://www.smcl.org/en/content/foster-city/" target="_blank" rel="nofollow">FOSTER CITY LIBRARY</a></p>
-		<p><a href="http://www.fchistorysocy.homestead.com" target="_blank" rel="nofollow">FOSTER CITY HISTORICAL SOCIETY</a></p>
-		<p><a href="http://www.fostercity.org/services/recreation/" target="_blank" rel="nofollow">FOSTER CITY PARKS &amp; RECREATION</a></p>
-		<p><a href="http://www.pjcc.org" target="_blank" rel="nofollow">PENINSULA JEWISH CMNTY CTR</a></p>
-		<p class="f-lp"><a href="http://www.topflight-movers.com" target="_blank" rel="nofollow">TOPFLIGHT-MOVERS.COM</a></p>
+                       		<hr class="primary">
+                <div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.fostercity.org" target="_blank" rel="nofollow">Foster City</a></h1>
+		<p><a href="http://fostercity.org/Services/safety/fire/index.cfm" target="_blank" rel="nofollow">Foster City Cert</a></p>
+		<p><a href="http://www.co.sanmateo.ca.us" target="_blank" rel="nofollow">San Mateo County</a></p>
+		<p><a href="http://www.smccd.net" target="_blank" rel="nofollow">Community College</a></p>
+		<p><a href="http://www.fostercitychamber.com" target="_blank" rel="nofollow">Foster City Chamber</a></p>
+		
+		<p><a href="http://www.peninsulaMusicalArts.org" target="_blank" rel="nofollow">Symphony And The Arts</a></p>
+		<p><a href="http://www.hillbarntheatre.org" target="_blank" rel="nofollow">Hillbarn Theater</a></p>
+		<p><a href="http://www.fostercityrotary.org" rel="nofollow" target="_blank">Foster City Rotary</a></p>
+		<p><a href="http://www.commute.org" target="_blank" rel="nofollow">Free Shuttle Bus</a></p>
+		<p><a href="http://www.smcl.org/en/content/foster-city/" target="_blank" rel="nofollow">Foster City Library</a></p>
+		<p><a href="http://www.fchistorysocy.homestead.com" target="_blank" rel="nofollow">Foster City Historical Society</a></p>
+		<p><a href="http://www.fostercity.org/services/recreation/" target="_blank" rel="nofollow">Foster City Parks &amp; Recreation</a></p>
+		<p><a href="http://www.pjcc.org" target="_blank" rel="nofollow">Peninsula Jewish Community Center</a></p>
+		<p class="f-lp"><a href="http://www.topflight-movers.com" target="_blank" rel="nofollow">Topflight Movers</a></p>
 	</div>
-	<div id="c2"><h1 class="f-fp">Lahaina Information</h1>
-		<dl>
-			<dd><a href="http://www.visitlahaina.com" target="_blank" rel="nofollow">www.visitlahaina.com</a></dd>
-			<dd><a href="http://www.maui.net" target="_blank" rel="nofollow">www.maui.net</a></dd>
-		</dl>
-		<p><a href="http://www.mauichamber.com" target="_blank" rel="nofollow">CHAMBER OF COMMERCE</a></p>
-		<p><a href="http://WWW.oldlahainaluau.com" target="_blank" rel="nofollow">MAUI THINGS TO DO</a></p>
-		<p><a href="http://www.wikipedia.org/wiki/Lahaina/" target="_blank" rel="nofollow">LAHAINA HISTORY &amp; INFORMATION</a></p>
-		<p><a href="http://www.maui.hawaii.edu" target="_blank" rel="nofollow">COMMUNITY COLLEGE</a></p>
-		<p><a href="http://www.mauioceancenter.com" target="_blank" rel="nofollow">MAUI OCEAN CENTER</a></p>
-		<p><a href="http://www.omaui.com" target="_blank" rel="nofollow">BEST SURF UPDATES</a></p>
-		<p><a href="http://www.fishmaui.com" target="_blank" rel="nofollow">FISHING WEB SITE</a></p>
-		<p><a href="http://www.whalersvillage.com" target="_blank" rel="nofollow">WHALER'S VILLAGE</a></p>
-		<p><a href="http://www.mauifilmfestival.com/mffw_index.php" target="_blank" rel="nofollow">MAUI FILM FESTIVAL</a></p>
-		<p><a href="http://www.mauifridays.com/lahaina/" target="_blank" rel="nofollow">MAUI 2ND FRIDAY LAHAINA</a></p>
-		<p class="f-lp"><a href="http://www.rotaryclublahaina.org" target="_blank" rel="nofollow">THE LAHAINA ROTARY CLUB</a></p>
+	<div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.visitlahaina.com" target="_blank" rel="nofollow">Lahaina</h1></a>
+		<p><a href="http://www.maui.net" target="_blank" rel="nofollow">www.maui.net</a></p>
+		<p><a href="http://www.mauichamber.com" target="_blank" rel="nofollow">Lahaina Chamber Of Commerce</a></p>
+		<p><a href="http://WWW.oldlahainaluau.com" target="_blank" rel="nofollow">Maui Things To Do</a></p>
+		<p><a href="http://www.wikipedia.org/wiki/Lahaina/" target="_blank" rel="nofollow">Lahaina History &amp; Information</a></p>
+		<p><a href="http://www.maui.hawaii.edu" target="_blank" rel="nofollow">Community College</a></p>
+		<p><a href="http://www.mauioceancenter.com" target="_blank" rel="nofollow">Maui Ocean Center</a></p>
+		<p><a href="http://www.omaui.com" target="_blank" rel="nofollow">Best Surf Updates</a></p>
+		<p><a href="http://www.fishmaui.com" target="_blank" rel="nofollow">Fishing Maui</a></p>
+		<p><a href="http://www.whalersvillage.com" target="_blank" rel="nofollow">Whaler's Village</a></p>
+		<p><a href="http://www.mauifilmfestival.com/mffw_index.php" target="_blank" rel="nofollow">Maui Film Festival</a></p>
+		<p><a href="http://www.mauifridays.com/lahaina/" target="_blank" rel="nofollow">Maui 2nd Friday Lahaina</a></p>
+		<p class="f-lp"><a href="http://www.rotaryclublahaina.org" target="_blank" rel="nofollow">Lahaina Rotary Club</a></p>
+        
 	</div>
-	<div id="c3"><h1 class="f-fp"><a href="http://www.moraga.ca.us" target="_blank">Moraga Information</a></h1>
-		<p><a href="http://www.moragachamber.org" target="_blank" rel="nofollow">CHAMBER OF COMMERCE</a></p>
-		<p><a href="http://www.shopmoragafirst.com" target="_blank" rel="nofollow">SHOP MORAGA FIRST</a></p>
-		<p><a href="http://www.stmarys-ca.edu" target="_blank" rel="nofollow">SAINT MARY'S COLLEGE</a></p>
-		<p><a href="http://www.co.contra-costa.ca.us" target="_blank" rel="nofollow">CONTRA COSTA COUNTY</a></p>
-		<p><a href="http://www.lamorindacert.org" target="_blank" rel="nofollow">CERT -  LAMORINDA AREA</a></p>
-		<p><a href="http://www.facebook.com/pages/Moraga-Lions-Club/115105611880918/" target="_blank" rel="nofollow">MORAGA LIONS CLUB</a></p>
-		<p><a href="http://www.lamorindaweekly.com" target="_blank" rel="nofollow">MORAGA  LOCAL NEWSPAPER</a></p>
-		<p><a href="http://www.lamorindaweb.com" target="_blank" rel="nofollow">LAMORINDA WEB</a></p>
-		<p><a href="http://www.moragahistory.org" target="_blank" rel="nofollow">MORAGA HISTORICAL SOC.</a></p>
-		<p><a href="http://www.mofd.org" target="_blank" rel="nofollow">MORAGA-ORINDA FIRE DEPT.</a></p>
-		<p><a href="http://www.moragacitizensnetwork.org" target="_blank" rel="nofollow">MORAGA CITIZENS NETWORK</a></p>
-		<p><a href="http://www.sustainablemoraga.org" target="_blank" rel="nofollow">SUSTAINABLE MORAGA</a></p>
-		<p><a href="http://www.moragajuniors.org" target="_blank" rel="nofollow">MORAGA JUNIOR WOMEN'S</a></p>
-		<p><a href="http://www.moragamovers.org" target="_blank" rel="nofollow">MORAGA SENIOR CITIZENS</a></p>
-		<p class="f-lp"><a href="http://www.moragahacienda.com" target="_blank" rel="nofollow">HACIENDA DE LOS FLORES</a></p>
+	<div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.moraga.ca.us" target="_blank">Moraga</a></h1>
+		<p><a href="http://www.moragachamber.org" target="_blank" rel="nofollow">Moraga Chamber Of Commerce</a></p>
+		<p><a href="http://www.shopmoragafirst.com" target="_blank" rel="nofollow">Shop Moraga First</a></p>
+		<p><a href="http://www.stmarys-ca.edu" target="_blank" rel="nofollow">Saint Mary's College</a></p>
+		<p><a href="http://www.co.contra-costa.ca.us" target="_blank" rel="nofollow">Contra Costa County</a></p>
+		<p><a href="http://www.lamorindacert.org" target="_blank" rel="nofollow">Cert - Lamorinda Area</a></p>
+		<p><a href="http://www.facebook.com/pages/Moraga-Lions-Club/115105611880918/" target="_blank" rel="nofollow">Moraga Lions Club</a></p>
+		<p><a href="http://www.lamorindaweekly.com" target="_blank" rel="nofollow">Moraga Local Newspaper</a></p>
+		<p><a href="http://www.lamorindaweb.com" target="_blank" rel="nofollow">Lamorinda Web</a></p>
+		<p><a href="http://www.moragahistory.org" target="_blank" rel="nofollow">Moraga Historical Society</a></p>
+		<p><a href="http://www.mofd.org" target="_blank" rel="nofollow">Moraga-Orinda Fire Dept.</a></p>
+		<p><a href="http://www.moragacitizensnetwork.org" target="_blank" rel="nofollow">Moraga Citizens Network</a></p>
+		<p><a href="http://www.sustainablemoraga.org" target="_blank" rel="nofollow">Sustainable Moraga</a></p>
+		<p><a href="http://www.moragajuniors.org" target="_blank" rel="nofollow">Moraga Junior Women's Club</a></p>
+		<p><a href="http://www.moragamovers.org" target="_blank" rel="nofollow">Moraga Senior Citizens</a></p>
+		<p class="f-lp"><a href="http://www.moragahacienda.com" target="_blank" rel="nofollow">Hacienda De Los Flores</a></p>
+        
 	</div>
     </div>
-                </p>
+                <p>
         		<br/>
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
         	</div>
         </div>
         </div>
-    </div>
+    
     <!-- Merch Coupon Pop -->
      <div id="couponModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -629,12 +718,75 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         		<p class="text-center">
                 <br/><img src="img/coupon.jpg" alt="5amaui" name="5amaui" width="60%">
                 </p>
-        		<br/>
+        		<p><br/>
+                
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
         	</div>
         </div>
         </div>
     </div>
+    <!-- Retail Coupon Pop -->
+     <div id="retailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Lahaina Retail Coupons</h2>
+        		<p class="text-center">
+                <br/>
+                <a href="img/lahainaretailcoups.jpg" target="_blank">
+                <img src="img/lahainaretailcoups.jpg" alt="5amaui" name="5amaui" width="60%"></a>
+                </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+	<!-- Retail MO Coupon Pop -->
+     <div id="retailmoModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Lahaina Retail Coupons</h2>
+        		<p class="text-center">
+                <br/>
+                <a href="img/moretailcoups.jpg" target="_blank">
+                <img src="img/moretailcoups.jpg" alt="5amoraga" name="5amoraga" width="60%"></a>
+                </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+	
+    <!-- Storage Front Calc Pop Try #2 -->
+	<!-- Modal -->
+<div class="modal fade" id="calcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Storage Calculator</h4>
+      </div>
+      <div class="modal-body">
+          <iframe src="https://www.storagefront.com/calculator/additems" width="800" height="800" frameborder="0" allowtransparency="true"></iframe>  
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+        
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
     <!-- Constant Contact Form -->
      <div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -685,9 +837,11 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
 <script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 <!--End CTCT Sign-Up Form-->
                </p>
-        		<br/>
+        		<p><br/>
+                
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
-        	</div>
+        	</p>
+            </div>
         </div>
         </div>
     </div>
@@ -699,8 +853,10 @@ Our integrity is irreplaceable and ever present in our minds. With that in mind,
         		<h2 class="text-center">Contact Us!</h2>
                 <p><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-800-527-7223">(800) 527-7223</a></i></p>
 		        <p><i class="icon-md ion-ios-email-outline"> <a href="mailto:marketing@5aspace.com" target="_blank">marketing@5aspace.com</a></i></p>
-        		<br/>
+        		<p><br/>
+                
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
         	</div>
         </div>
         </div>
