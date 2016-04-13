@@ -58,7 +58,7 @@ h2,h4,h5,h6 {
 p {
     font-size: 17px;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 	
 }
 
@@ -74,6 +74,11 @@ p {
 .icon-md {
     font-size: 25px;
     line-height: 9px;
+}
+
+.icon-md1 {
+    font-size: 18px;
+    line-height: 4px;	
 }
 
 .icon-sm {
@@ -592,6 +597,9 @@ img::-moz-selection {
 	background: -moz-linear-gradient(#222, #222);
 	background: -webkit-linear-gradient(#222, #222);
 	background: -o-linear-gradient(#222, #222);
+}
+.modal-sm {
+	max-width: 400px;
 }
 .close {
 	background: #606061;
