@@ -598,9 +598,6 @@ img::-moz-selection {
 	background: -webkit-linear-gradient(#222, #222);
 	background: -o-linear-gradient(#222, #222);
 }
-.modal-sm {
-	max-width: 400px;
-}
 .close {
 	background: #606061;
 	color: #FFFFFF;
