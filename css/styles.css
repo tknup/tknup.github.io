@@ -298,6 +298,26 @@ header .header-content .inner p {
     color: rgba(255,255,255,0.7);
 }
 
+header .siteheader-content {
+    position: relative;
+    width: 100%;
+    padding: 0px 15px;
+    text-align: center;
+    z-index: 2;
+}
+
+header .siteheader-content .siteinner h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+header .siteheader-content .siteinner p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+}
+
 #video-background {
   position: absolute;
   right: 0; 
