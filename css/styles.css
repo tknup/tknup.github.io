@@ -413,7 +413,7 @@ textarea {
     max-width: 400px;
 }
 
-@media(min-width:768px) {
+@media(min-width:992px) {
     .feature {
         margin: 20px auto 0;
     }
