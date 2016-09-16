@@ -707,6 +707,13 @@ img::-moz-selection {
   -webkit-box-shadow: 0 0 10px #888;
      -moz-box-shadow: 0 0 10px #888;
           box-shadow: 0 0 10px #888;
+	/* fade out animation */
+	-webkit-animation: seconds 2.0s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 5s;
+    animation: seconds 2.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 7.5s;
 }
 .ribbon a {
   border: 1px solid #faa;
@@ -721,3 +728,24 @@ img::-moz-selection {
   /* shadow */
   text-shadow: 0 0 5px #444;
 }
+
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}
+
+.alert-5a { border-color: #fff;background: #fff;color: #000; }
