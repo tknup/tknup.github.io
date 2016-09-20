@@ -261,6 +261,9 @@ footer {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #86bdff;
     }
+		.divstyle {
+		height:100px;
+	}
 }
 
 header {
@@ -375,7 +378,9 @@ footer {
         min-height: 600px;
         padding: 100px 0;
     }
-
+	.divstyle {
+		height:50px;
+	}
 }
 
 .form-control {
