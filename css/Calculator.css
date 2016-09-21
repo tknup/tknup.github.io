@@ -1,0 +1,193 @@
+@charset "utf-8";
+@media (min-width: 768px) {
+div.calc {
+	max-width: 965px;
+	margin: 0 auto;
+}
+#unitsizecalc table tbody tr td.calc input.sizecalc {
+	width: 35%;
+	float: right;
+}
+.unitpricingtable i {
+	padding-right: 8px;
+}
+#unitsizecalc th {
+	font-size: 1.85em;
+	font-weight: 500;
+        font-family: Oswald;
+}
+#unitsizecalc td {
+	font-size: 1.1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+}
+.unitpricingtable a span.round.success {
+	width: 100%;
+	margin: 0;
+}
+.unitpricingtable tbody tr td p {
+	margin-bottom: 0;
+}
+.unitpricingtable a span.round.success {
+	width: 100%;
+	margin: 0;
+}
+.unitpricingtable tbody tr td p {
+	margin-bottom: 0;
+}
+#unitsizecalc h3 {
+        font-size:.95em!important;
+        color: #ffffff;
+}
+#unitsizecalc h2 {
+        font-size: 1.85em;
+	font-weight: 500;
+        font-family: Oswald;
+        text-align: center;
+}
+.btn {
+    color: #ffffff;
+    padding: 10px;
+    border-color: #347093;
+    border: 1px solid #2f2f2f;
+    background-color: #347093;
+    cursor:pointer
+}
+.btn:hover {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+.btn:active {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+}
+@media (max-width: 767px) {
+	div.calc {
+	max-width: 98%;
+	width: 98%;
+	margin: 0 auto;
+}
+table.unitpricingtable tbody tr td {
+	line-height: 1.25em;
+	padding: 2px;
+}
+#unitsizecalc h3 {
+	font-size: 1.85em!important;
+        color: #ffffff;
+}
+#unitsizecalc #UnitEstimate td div {
+	font-size: .9em!important;
+}
+#unitsizecalc td {
+	font-size: .9em!important;
+        width: 100%;
+        float: left;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+}
+#unitsizecalc table tbody tr td.calc input .buttoncalc {
+        float: left!important;
+}
+#unitsizecalc th {
+	font-weight: 500;
+        font-family: Oswald;
+        font-size: 1.25em!important;
+}
+#unitsizecalc h2 {
+        font-size: 1.25em;
+	font-weight: 500;
+        font-family: Oswald;
+        text-align: center;
+}
+#unitsizecalc table tbody tr td.calc input.sizecalc {
+	width: 40%;
+	float: right;
+}
+.unitpricingtable h5 {
+	font-size: .55em;
+}
+.unitpricingtable tbody tr td {
+	line-height: 1.25em;
+	padding: 2px;
+}
+.unitpricingtable tbody tr td a span.round.success {
+	font-size: 0.55em;
+}
+.unitpricingtable .button {
+	font-size: .55em;
+}
+.unitpricingtable tbody tr td a span.round.success {
+	font-size: 0.55em;
+}
+.unitpricingtable .button {
+	font-size: .55em;
+}
+.unitpricingtable tbody tr td p a span.round.success.label {
+	font-size: .6em;
+}
+.btn {
+    color: #ffffff;
+    padding: 10px;
+    border-color: #347093;
+    border: 1px solid #2f2f2f;
+    background-color: #347093;
+    cursor:pointer
+}
+.btn:hover {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+.btn:active {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+}
+
+@media (max-width:480px) {
+	div.calc {
+	max-width: 98%;
+	width: 98%;
+	margin: 0 auto;
+}
+#unitsizecalc h3 {
+	font-size: 1.8em!important;
+        color: #ffffff;
+}
+#unitsizecalc #UnitEstimate td div {
+	font-size: .9em!important;
+}
+#unitsizecalc th {
+	font-weight: 500;
+        font-family: Oswald;
+        font-size: 1.25em!important;
+}
+#unitsizecalc h2 {
+        font-size: 1.25em;
+	font-weight: 500;
+        font-family: Oswald;
+        text-align: center;
+}
+#unitsizecalc table tbody tr td.calc input.sizecalc {
+	width: 40%;
+	float: right;
+}
+.unitpricingtable tbody tr td {
+	padding: 0;
+}
+#unitsizecalc td {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+        font-size: .9em;
+}
+.btn {
+    color: #ffffff;
+    padding: 10px;
+    border-color: #347093;
+    border: 1px solid #2f2f2f;
+    background-color: #347093;
+    cursor:pointer
+}
+.btn:hover {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+.btn:active {
+    background-color: rgba(52, 112, 147, 0.55);
+}
+}
