@@ -87,6 +87,7 @@ table.unitpricingtable tbody tr td {
 }
 #unitsizecalc table tbody tr td.calc input .buttoncalc {
         float: left!important;
+		color: black!important;
 }
 #unitsizecalc th {
 	font-weight: 500;
