@@ -18,8 +18,8 @@ div.calc {
 }
 #unitsizecalc td {
 	font-size: 1.1em;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+       /* font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;*/
 }
 .unitpricingtable a span.round.success {
 	width: 100%;

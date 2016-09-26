@@ -1,0 +1,939 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Self Storage Unit Size Calculator</title>
+<meta name="Description" content="Storage Calculator, Self Storage Size Estimator, Storage Unit Calculator, What Size storage unit do I need" />
+<meta name="Keywords" content="Storage Size Calculator, Self Storage Calculator, Storage Unit Size Calculator, Estimate storage size" />
+<link rel="stylesheet" href="css/Calculator.css" type="text/css"  />
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/calculator.js"></script>
+<link rel="stylesheet" href="css/main.less" type="text/css"  />
+	<meta name="google-site-verification" content="ocNGnnZP3JpmHWPyj6pbI2cDmm80ejwDVeFhVrMP1SE">
+	<meta name="p:domain_verify" content="5b68de79ee02fbf4e88bec102902436c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31565668-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#two">5A Rent-A-Space</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <!--<li>
+                        <a class="page-scroll" href="#one">Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Our Locations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Gallery</a>
+                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#footer">Contact & Info</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-middle">
+                    <li>
+                        <a href="5atest.html">Home Page</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="javascript:ShowPayOnline(0)">Make A Payment</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" href="#specialModal">Specials</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--<header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">5A Rent-A-Space</h1>
+                <h1><img src="img/5alogo1.png" alt="5A Rent-A-Space Logo" name="5a" width="50%" align="absmiddle"></h1>
+                <h3>Your Personal & Business Storage Company in the SF Bay Area CA and West Maui HI</h3>
+                <hr>
+               <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; 
+               <h1><a href="#two" class="btn btn-primary btn-xl page-scroll">Our Locations</a></h1>
+            </div>
+        </div>
+        
+        <video autoplay loop class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/Traffic-blurred2.jpg" id="video-background">
+            <source src="img/lahaina.mp4" type="video/mp4">Your browser does not support the video tag. It is suggested that you upgrade your browser.
+        </video>
+        
+    </header>
+	-->
+    <!-- 
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Test Site By Trav</h2>
+                    <br>
+                    <p class="text-faded">
+                        This responsive site allows for layouts that behave accordingly on different devices.
+                    </p>
+                    <a href="#two" class="btn btn-default btn-xl page-scroll">Our Locations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1><a href="5atest.html"><img src="img/5alogo1.png" alt="5A Rent-A-Space Logo" name="5a" width="30%" align="absmiddle"></a></h1>
+                <h3>Your Personal & Business Storage Company in the SF Bay Area CA and West Maui HI</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">       				
+        <div class="calc" style="border: 1px solid #A7A7A7;">
+  <form action="" name="unitsizecalc" id="unitsizecalc">
+    <table border="0" bordercolor="#000" bgcolor="fefdfc">
+      <tr style="background: transparent!important;">
+      <td colspan="6" style="padding: 5px; text-align: center;"><h2 style="padding-top:0; margin-top: 0;">Storage Unit Calculator</h2>Enter quantities of each item that you intend to store.<br/><br/></td>
+      </tr>
+      <tr>
+        <th valign="bottom" class="calc" colspan="6" style="text-align: center; padding-top: 18px; padding-bottom: 18px; color: #2f2f2f; background: #e4e0d7"><img src="img/LivingRoom.jpg" width=162 height=102><br/>Living Area</th>
+      </tr>
+      <tr height="20px"></tr>
+      <tr>
+        <td class="calc" colspan="2">Bookcase
+          <input class="sizecalc" name="LR_bookcase" type="text" value="" /></td>
+        <td class="calc" colspan="2">Bookshelves
+          <input class="sizecalc" type="text" name="LR_bookshelves" /></td>
+        <td class="calc" colspan="2">Cabinet
+          <input class="sizecalc" type="text" name="LR_cabinet" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Chair, arm
+          <input class="sizecalc" type="text" name="LR_chair_arm" /></td>
+        <td class="calc" colspan="2">Chair straight
+          <input class="sizecalc" type="text" name="LR_chair_straight" /></td>
+        <td class="calc" colspan="2">Chair occasional
+          <input class="sizecalc" type="text" name="LR_chair_occas" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Chair overstuffed
+          <input class="sizecalc" type="text" name="LR_chair_overstuff" /></td>
+        <td class="calc" colspan="2">Chair rocking
+          <input class="sizecalc" type="text" name="LR_chair_rocking" /></td>
+        <td class="calc" colspan="2">Desk
+          <input class="sizecalc" type="text" name="LR_desk" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Fireplace equip.
+          <input class="sizecalc" type="text" name="LR_fireplace_equip" /></td>
+        <td class="calc" colspan="2">Lamp
+          <input class="sizecalc" type="text" name="LR_lamp" /></td>
+        <td class="calc" colspan="2">Sofa, 6ft.
+          <input class="sizecalc" type="text" name="LR_sofa_6ft" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Sofa, sectional/each piece
+          <input class="sizecalc" type="text" name="LR_sofa_sect" /></td>
+        <td class="calc" colspan="2">Loveseat
+          <input class="sizecalc" type="text" name="LR_sofa_loveseat" /></td>
+        <td class="calc" colspan="2">Stereo System Console
+          <input class="sizecalc" type="text" name="LR_stereo_console" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Table
+          <input class="sizecalc" type="text" name="LR_table" /></td>
+        <td class="calc" colspan="2">Table, coffee/end
+          <input class="sizecalc" type="text" name="LR_table_coffee_end" /></td>
+        <td class="calc" colspan="2">TV, table-model
+          <input class="sizecalc" type="text" name="LR_tv_table_model" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">TV, console
+          <input class="sizecalc" type="text" name="LR_tv_console" /></td>
+        <td class="calc" colspan="2">Wall Unit
+          <input class="sizecalc" type="text" name="LR_wallunit" /></td>
+          <td class="calc" colspan="2">Recliner
+          <input class="sizecalc" type="text" name="LR_recliner" /></td>
+      </tr>     
+      <tr>
+        <td class="calc" colspan="2">Ottoman
+          <input class="sizecalc" type="text" name="LR_ottoman" /></td>
+        <td class="calc" colspan="2">Chaise lounge
+          <input class="sizecalc" type="text" name="LR_chaiselounge" /></td>
+          <td class="calc" colspan="2">Day bed
+          <input class="sizecalc" type="text" name="LR_daybed" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Media/Wall unit
+          <input class="sizecalc" type="text" name="LR_mediawallunit" /></td>
+        <td class="calc" colspan="2">Bookcase–long
+          <input class="sizecalc" type="text" name="LR_booklong" /></td>
+          <td class="calc" colspan="2">Wet bar
+          <input class="sizecalc" type="text" name="LR_wetbar" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Cabinet–long
+          <input class="sizecalc" type="text" name="LR_cabinetlong" /></td>
+        <td class="calc" colspan="2">HD/flat panel TV (55”)
+          <input class="sizecalc" type="text" name="LR_hdfivefive" /></td>
+          <td class="calc" colspan="2">HD/flat panel TV (32”)
+          <input class="sizecalc" type="text" name="LR_hdthreetwo" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Office chair
+          <input class="sizecalc" type="text" name="LR_officechair" /></td>
+        <td class="calc" colspan="2">Computer work station
+          <input class="sizecalc" type="text" name="LR_computerstation" /></td>
+      </tr><tr height="20px"></tr>      
+      <tr>
+        <th valign="bottom" class="calc" colspan="6" style="text-align: center; padding-top: 18px; padding-bottom: 18px; color: #2f2f2f; background: #b4d177"><img src="img/Kitchen-Dining.jpg" width=324 height=102><br/>Kitchen & Dining Areas</th>
+      </tr>
+      <tr height="20px"></tr>
+      <tr>
+        <td class="calc" colspan="2">Air conditioner
+          <input class="sizecalc" type="text" name="APP_aircond" /></td>
+        <td class="calc" colspan="2">Buffet, base
+          <input class="sizecalc" type="text" name="DR_buffet_base" /></td>
+        <td class="calc" colspan="2">Cabinet, corner
+          <input class="sizecalc" type="text" name="DR_cabinet_corner" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Chair
+          <input class="sizecalc" type="text" name="APP_chair" /></td>
+        <td class="calc" colspan="2">Chair, dining
+          <input class="sizecalc" type="text" name="DR_chair_dining" /></td>
+        <td class="calc" colspan="2">Dehumidifier
+          <input class="sizecalc" type="text" name="APP_dehumid" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Dishwasher
+          <input class="sizecalc" type="text" name="APP_dishwasher" /></td>
+        <td class="calc" colspan="2">Dryer
+          <input class="sizecalc" type="text" name="APP_dryer" /></td>
+        <td class="calc" colspan="2">Freezer
+          <input class="sizecalc" type="text" name="APP_freezer" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Refrigerator
+          <input class="sizecalc" type="text" name="APP_refridge" /></td>
+        <td class="calc" colspan="2">Server
+          <input class="sizecalc" type="text" name="DR_server" /></td>
+        <td class="calc" colspan="2">Stove
+          <input class="sizecalc" type="text" name="APP_stove" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Table
+          <input class="sizecalc" type="text" name="APP_table" /></td>
+        <td class="calc" colspan="2">Table, dining
+          <input class="sizecalc" type="text" name="APP_table_dining" /></td>
+        <td class="calc" colspan="2">Vacuum cleaner
+          <input class="sizecalc" type="text" name="APP_vacuum" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Washing machine
+          <input class="sizecalc" type="text" name="APP_washing_mach" /></td>
+        <td class="calc" colspan="2">Bar table
+          <input class="sizecalc" type="text" name="DR_bartable" /></td>
+          <td class="calc" colspan="2">Bar chair/stool
+          <input class="sizecalc" type="text" name="DR_barstool" /></td>
+      </tr>
+      <tr>
+          <td class="calc" colspan="2">Microwave stand
+          <input class="sizecalc" type="text" name="DR_microstand" /></td>
+          <td class="calc" colspan="2">China buffet–long
+          <input class="sizecalc" type="text" name="DR_chinalong" /></td>
+      </tr><tr height="20px"></tr>
+      <tr>
+        <th valign="bottom" class="calc" colspan="6" style="text-align: center; padding-top: 18px; padding-bottom: 18px; color: #2f2f2f; background: #6d7687"><img src="img/Bedroom.jpg" width=162 height=102><br/>Bedroom Area</th>
+      </tr>
+      <tr height="20px"></tr>
+      <tr>
+        <td class="calc" colspan="2">Bed, bunk
+          <input class="sizecalc" type="text" name="BR_bed_bunk" /></td>
+        <td class="calc" colspan="2">Bed, double
+          <input class="sizecalc" type="text" name="BR_bed_double" /></td>
+        <td class="calc" colspan="2">Bed, single
+          <input class="sizecalc" type="text" name="BR_bed_single" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Bed, king
+          <input class="sizecalc" type="text" name="BR_bed_king" /></td>
+        <td class="calc" colspan="2">Bed, queen
+          <input class="sizecalc" type="text" name="BR_bed_queen" /></td>
+        <td class="calc" colspan="2">Bed, fouton
+          <input class="sizecalc" type="text" name="BR_bed_fouton" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Bookshelves
+          <input class="sizecalc" type="text" name="BR_bookshelves" /></td>
+        <td class="calc" colspan="2">Chair
+          <input class="sizecalc" type="text" name="BR_chair" /></td>
+        <td class="calc" colspan="2">Bureau
+          <input class="sizecalc" type="text" name="BR_bureau" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Chest, cedar
+          <input class="sizecalc" type="text" name="BR_chest_cedar" /></td>
+        <td class="calc" colspan="2">Desk
+          <input class="sizecalc" type="text" name="BR_desk" /></td>
+        <td class="calc" colspan="2">Dresser, single
+          <input class="sizecalc" type="text" name="BR_dresser_single" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Dresser, double
+          <input class="sizecalc" type="text" name="BR_dresser_double" /></td>
+        <td class="calc" colspan="2">Night stand
+          <input class="sizecalc" type="text" name="BR_nightstand" /></td>
+        <td class="calc" colspan="2">Armoire
+          <input class="sizecalc" type="text" name="BR_armoire" /></td>
+      </tr>      
+      <tr>
+        <td class="calc" colspan="2">Vanity/dressing table
+          <input class="sizecalc" type="text" name="BR_vanitydressing" /></td>
+        <td class="calc" colspan="2">Wardrobe
+          <input class="sizecalc" type="text" name="BR_wardrobe" /></td>
+        <td class="calc" colspan="2">Crib
+          <input class="sizecalc" type="text" name="BR_crib" /></td>
+      </tr><tr height="20px"></tr>
+      <tr>
+        <th valign="bottom" class="calc" colspan="6" style="text-align: center; padding-top: 18px; padding-bottom: 18px; color: #2f2f2f; background: #6d7687"><img src="img/Misc-Office.jpg" width=162 height=102><br/>Miscellaneous Items</th>
+      </tr>
+      <tr height="20px"></tr>
+      <tr>
+        <td class="calc" colspan="2">Bicycle
+          <input class="sizecalc" type="text" name="MISC_bicycle" /></td>
+        <td class="calc" colspan="2">Desk
+          <input class="sizecalc" type="text" name="MISC_desk" /></td>
+        <td class="calc" colspan="2">Fan
+          <input class="sizecalc" type="text" name="MISC_fan" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">File cabinet, cdbd
+          <input class="sizecalc" type="text" name="MISC_filecab_cdbd" /></td>
+        <td class="calc" colspan="2">File cabinet, 2 drw
+          <input class="sizecalc" type="text" name="MISC_filecab_2" /></td>
+        <td class="calc" colspan="2">File cabinet, 4 drw
+          <input class="sizecalc" type="text" name="MISC_filecab_4" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Golf bag
+          <input class="sizecalc" type="text" name="MISC_golfbag" /></td>
+        <td class="calc" colspan="2">Hamper, Clothes
+          <input class="sizecalc" type="text" name="MISC_hamper" /></td>
+        <td class="calc" colspan="2">Large Stroller
+          <input class="sizecalc" type="text" name="MISC_baby_carriage" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Patio table
+          <input class="sizecalc" type="text" name="MISC_patio_table" /></td>
+        <td class="calc" colspan="2">Patio chair
+          <input class="sizecalc" type="text" name="MISC_patio_chair" /></td>
+        <td class="calc" colspan="2">Patio chaise lounge
+          <input class="sizecalc" type="text" name="MISC_patio_lounge" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Piano, baby grand
+          <input class="sizecalc" type="text" name="MISC_piano_baby" /></td>
+        <td class="calc" colspan="2">Piano, upright
+          <input class="sizecalc" type="text" name="MISC_piano_uprite" /></td>
+        <td class="calc" colspan="2">Rug, large
+          <input class="sizecalc" type="text" name="MISC_rug_large" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Rug, small
+          <input class="sizecalc" type="text" name="MISC_rug_small" /></td>
+        <td class="calc" colspan="2">Sewing machine
+          <input class="sizecalc" type="text" name="MISC_sewing_mach" /></td>
+        <td class="calc" colspan="2">Suitcase
+          <input class="sizecalc" type="text" name="MISC_suitcase" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Table, card
+          <input class="sizecalc" type="text" name="MISC_card_table" /></td>
+        <td class="calc" colspan="2">Table, game
+          <input class="sizecalc" type="text" name="MISC_game_table" /></td>
+        <td class="calc" colspan="2">Trunk
+          <input class="sizecalc" type="text" name="MISC_trunk" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Box, book
+          <input class="sizecalc" type="text" name="MISC_box_book" /></td>
+        <td class="calc" colspan="2">Box, legal tote
+          <input class="sizecalc" type="text" name="MISC_box_legal" /></td>
+        <td class="calc" colspan="2">Box, all-purpose
+          <input class="sizecalc" type="text" name="MISC_box_allpurp" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Dryer
+          <input class="sizecalc" type="text" name="MISC_dryer" /></td>
+        <td class="calc" colspan="2">Bar fridge/wine cooler
+          <input class="sizecalc" type="text" name="MISC_barfridge" /></td>
+        <td class="calc" colspan="2">Electric fireplace
+          <input class="sizecalc" type="text" name="MISC_elecfire" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Barbecue
+          <input class="sizecalc" type="text" name="MISC_bbq" /></td>
+        <td class="calc" colspan="2">Adirondack chair
+          <input class="sizecalc" type="text" name="MISC_adirondack" /></td>
+        <td class="calc" colspan="2">Lawnmower
+          <input class="sizecalc" type="text" name="MISC_mower" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Billiard table
+          <input class="sizecalc" type="text" name="MISC_billiard" /></td>
+        <td class="calc" colspan="2">Treadmill
+          <input class="sizecalc" type="text" name="MISC_treadmill" /></td>
+        <td class="calc" colspan="2">Box (Extra-Large)
+          <input class="sizecalc" type="text" name="MISC_boxxl" /></td>
+      </tr>
+      <tr>
+        <td class="calc" colspan="2">Box (Large)
+          <input class="sizecalc" type="text" name="MISC_boxlg" /></td>
+        <td class="calc" colspan="2">Storage Bin
+          <input class="sizecalc" type="text" name="MISC_storagebin" /></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <table border="0" cellpadding="0" cellspacing="0" id="calc-finish" style="margin: 0 auto;">
+      <tr>
+        <td><div id="UnitEstimate"></div></td>
+      </tr>
+    </table>
+    <table border="0" bordercolor="#000" cellpadding="2" cellspacing="0" id="calc-finish" style="margin: 0 auto;">
+      <tr>
+        <td height="25"></td>
+      </tr>
+      <tr>
+        <td><input class="btn" type="submit"  value="Calculate" name="cbutton" onClick="addUp(this); showItem('UnitEstimate'); return false;" /></td>
+        <td width="25"></td>
+        <td><input class="buttoncalc" type="text" name="totalfield" size="5" />
+          is your <strong>estimated</strong> cubic footage</td>
+        <td width="25"></td>
+        <td><input class="btn" name="reset" type="reset" value="Reset" /></td>
+      </tr>
+      <tr>
+        <td colspan="5" height=10></td>
+      </tr>
+    </table>
+  </form>
+  <br />
+  <br />
+</div>
+</div>
+    
+               
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="page-scroll" data-toggle="modal" href="#couponModal">Coupon</a></li>
+                        <li><a class="page-scroll" data-toggle="modal" href="#communityModal">Community</a></li>
+                        <li><a class="page-scroll" data-toggle="modal" href="#sizeModal" target="_blank" title="Storage Unit Sizes">Storage Unit Size Guide</a></li>
+						<li><a href="faq.html"> FAQ </a></li>
+						<li><a href="promotions.html">Promotions Page</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="page-scroll" data-toggle="modal" href="#emailModal">Join Our Email List</a></li>
+                        <li><a class="page-scroll" data-toggle="modal" href="#contactModal">Contact Us</a></li>
+                        <li><a class="page-scroll" data-toggle="modal" href="#aboutModal">About</a></li>
+                    </ul>
+                </div>
+               <div class="col-xs-12 col-sm-3 column">
+                   <h4>Locations</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="fostercity.html" title="5A Rent-A-Space Foster City">Foster City</a></li>
+                        <li><a href="moraga.html" title="5A Rent-A-Space Moraga">Moraga</a></li>
+                        <li><a href="lahaina.html" title="5A Rent-A-Space Lahaina">Lahaina</a></li>
+                    </ul>
+					<!--<form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                        </div>
+                    </form>-->
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h4>Follow</h4>
+                    <ul class="list-inline">
+                      <li><a rel="nofollow" href="https://twitter.com/5ASpace" title="Twitter" target="_blank"><i class="icon-lg ion-social-twitter-outline smaller"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="https://www.facebook.com/5ASpace/" title="Facebook" target="_blank"><i class="icon-lg ion-social-facebook-outline smaller"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="https://www.youtube.com/channel/UCRgAp3PUa5L1HQUNl4IOF5w/videos?shelf_id=0&view=0&sort=dd" title="YouTube" target="_blank"><i class="icon-lg ion-social-youtube-outline smaller"></i></a></li>
+                      <li><a rel="nofollow" href="https://www.pinterest.com/5aspace/" title="Pinterest" target="_blank"><i class="icon-lg ion-social-pinterest-outline smaller"></i></a></li>
+                      <li><a rel="nofollow" href="https://www.instagram.com/5aspace/" title="Instagram" target="_blank"><i class="icon-lg ion-social-instagram-outline smaller"></i></a></li>
+                      <li><a rel="nofollow" href="http://blog.5aspace.com/" title="Blog" target="_blank"><i class="icon-lg ion-social-rss-outline smaller"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span class="pull-right text-muted small"><a href="http://5aspace.com">5aspace.com</a> ©2016 AAAAA Rent-A-Space</span>
+        </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="img/text.png" id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">AAAAA Rent-A-Space</h2>
+        		<h5 class="text-center">
+        		    5A Rent-A-Space has two California storage facilities in the San Francisco Bay Area and one facility in the Hawaiian Islands.
+        		</h5>
+        		<p class="text-justify">
+        		    At 5A Rent-A-Space each one of our customers is very important to us.
+
+Our storage facilities, staff and infrastructure all exist to serve our customers. Our success lies in our extensive knowledge of the storage industry and our ability to serve our customers better than our competitors.
+
+We have been in the storage business for over 45 years and one of the key factors for our longevity is the trust our customers have in us.
+
+Our integrity is irreplaceable and ever present in our minds. With that in mind, we strive to continue making good business and customer service decisions and to stand behind them.
+        		</p>
+        		<!--<p class="text-center"><a href="http://5aspace.com">See the old site at 5aspace.com</a></p>-->
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE </button></p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Nice Job!</h2>
+        		<p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo but this feature is coming soon!</p>
+        		<!--<p class="text-center"><a href="http://5aspace.com">Compare with the old site at 5aspace.com</a></p>-->
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- Specials Pop -->
+    <div id="specialModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Current Specials!</h2>
+        		<p class="text-center">
+                <br/><img src="img/special.jpg" alt="Special Offers" name="5amaui" width="60%"></p>
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+ <!-- Size Pop -->
+    <div id="sizeModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Storage Unit Size Guide</h2>
+        		<p class="text-center">
+                <br/><img src="img/size.jpg" alt="Storage Unit Size Guide" name="sizeguide" width="80%"></p>
+        		<p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+        <!-- FC Sites Pop -->
+    <div id="fcsiteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+         	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Foster City, San Mateo, CA</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center">
+                <br/><img src="img/fc.jpg" alt="Foster City, CA" name="5afostercity" width="60%"></p>
+        		<br/>
+               <p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-650-338-0013">(650) 338-0013</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:foster_city@5aspace.com" target="_blank">foster_city@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="https://www.google.com/maps?q=1221+east+hillsdale+blvd,+foster+city,+CA+94404" target="_blank">1221 E Hillsdale Blvd Foster City, CA 94404</a></i></p>
+        <p style="font-size:16px;line-height:1;margin-bottom:0px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm &amp; Sunday 7am-2:45pm
+        </p>
+		<p style="font-size:16px;line-height:1;margin-bottom:10px;text-align:center !important;"><br/>
+        Serving Foster City, San Mateo, Menlo Park, Palo Alto & cities across San Mateo County, California.
+        </p>
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- MO Sites Pop -->
+    <div id="mositeModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Moraga, Lamorinda, CA</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center">
+                <br/><img src="img/mo.jpg" alt="Moraga, CA" name="5amoraga" width="60%"></p>
+        		<br/>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-925-643-2024">(925) 643-2024</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:moraga@5aspace.com" target="_blank">moraga@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=455+moraga+Road%2C+moraga%2C+CA+94556" target="_blank">455 Moraga Rd Ste F Moraga, CA 94556</a></i></p>
+        <p style="font-size:16px;line-height:1;margin-bottom:0px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm Sunday &amp; 9am-5:45pm
+        </p>
+		<p style="font-size:16px;line-height:1;margin-bottom:10px;text-align:center !important;"><br/>
+        Serving Lafayette, Orinda, Moraga & cities across Contra Costa County, California.
+        </p>
+		<a href="#retailmoModal" data-toggle="modal"><h4 style="line-height:1;margin-bottom:0px;text-align:center">Retail Store Coupons!</h4></a>
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- LA Sites Pop -->
+    <div id="lasiteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 style="line-height:1;margin-bottom:0px;text-align:center">5A Lahaina, Kaanapali, Napili and West Maui, HI</h2>
+        		<p style="line-height:1;margin-bottom:0px;text-align:center !important;">
+                <br/><img src="img/maui.jpg" alt="Lahaina, HI" name="5amaui" width="60%"></p>
+        		<br/>
+                <p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-telephone-outline"> <a href="tel:1-808-745-1616">(808) 745-1616</a></i></p>
+		<p style="line-height:1.5;margin-bottom:1px;text-align:center !important;"><i class="icon-md ion-ios-email-outline"> <a href="mailto:lahaina@5aspace.com" target="_blank">lahaina@5aspace.com</a></i></p>
+        <p style="line-height:1.5;margin-bottom:10px;text-align:center !important;"><i class="icon-md ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=3600+Lower+Honoapiilani+Road%2C+Lahaina%2C+HI+96761" target="_blank">3600 L Honoapiilani Rd Lahaina, HI 96761</a></i></p>
+        <p style="font-size:16px;line-height:1;margin-bottom:10px;text-align:center !important;">
+        Office Hours: Mon-Sat 9am-6pm &amp; Sunday Closed
+		<br>
+        Yard Hours: Mon-Sat 7am-6:45pm &amp; Sunday 7am-2:45pm
+        </p>
+		<p style="font-size:16px;line-height:1;margin-bottom:10px;text-align:center !important;">
+        We focus on caring for our Aina', our customers and our community. <br/> Serving Lahaina, Kaanapali, Napili-Honokowai, Kapalua & cities across West Maui, Hawaii.
+        </p>
+        <a href="#retailModal" data-toggle="modal"><h4 style="line-height:1;margin-bottom:0px;text-align:center">Retail Store Coupons!</h4></a>
+        
+        <p><br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- Community Pop -->
+    <div id="communityModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+            
+        		<h1 class="text-center">Community Links</h1>
+                       		<hr class="primary">
+                <div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.fostercity.org" target="_blank" rel="nofollow">Foster City</a></h1>
+		<p><a href="http://fostercity.org/Services/safety/fire/index.cfm" target="_blank" rel="nofollow">Foster City Cert</a></p>
+		<p><a href="http://www.co.sanmateo.ca.us" target="_blank" rel="nofollow">San Mateo County</a></p>
+		<p><a href="http://www.smccd.net" target="_blank" rel="nofollow">Community College</a></p>
+		<p><a href="http://www.fostercitychamber.com" target="_blank" rel="nofollow">Foster City Chamber</a></p>
+		
+		<p><a href="http://www.peninsulaMusicalArts.org" target="_blank" rel="nofollow">Symphony And The Arts</a></p>
+		<p><a href="http://www.hillbarntheatre.org" target="_blank" rel="nofollow">Hillbarn Theater</a></p>
+		<p><a href="http://www.fostercityrotary.org" rel="nofollow" target="_blank">Foster City Rotary</a></p>
+		<p><a href="http://www.commute.org" target="_blank" rel="nofollow">Free Shuttle Bus</a></p>
+		<p><a href="http://www.smcl.org/en/content/foster-city/" target="_blank" rel="nofollow">Foster City Library</a></p>
+		<p><a href="http://www.fchistorysocy.homestead.com" target="_blank" rel="nofollow">Foster City Historical Society</a></p>
+		<p><a href="http://www.fostercity.org/services/recreation/" target="_blank" rel="nofollow">Foster City Parks &amp; Recreation</a></p>
+		<p><a href="http://www.pjcc.org" target="_blank" rel="nofollow">Peninsula Jewish Community Center</a></p>
+		<p class="f-lp"><a href="http://www.topflight-movers.com" target="_blank" rel="nofollow">Topflight Movers</a></p>
+	</div>
+	<div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.visitlahaina.com" target="_blank" rel="nofollow">Lahaina</h1></a>
+		<p><a href="http://www.maui.net" target="_blank" rel="nofollow">www.maui.net</a></p>
+		<p><a href="http://www.mauichamber.com" target="_blank" rel="nofollow">Lahaina Chamber Of Commerce</a></p>
+		<p><a href="http://WWW.oldlahainaluau.com" target="_blank" rel="nofollow">Maui Things To Do</a></p>
+		<p><a href="http://www.wikipedia.org/wiki/Lahaina/" target="_blank" rel="nofollow">Lahaina History &amp; Information</a></p>
+		<p><a href="http://www.maui.hawaii.edu" target="_blank" rel="nofollow">Community College</a></p>
+		<p><a href="http://www.mauioceancenter.com" target="_blank" rel="nofollow">Maui Ocean Center</a></p>
+		<p><a href="http://www.omaui.com" target="_blank" rel="nofollow">Best Surf Updates</a></p>
+		<p><a href="http://www.fishmaui.com" target="_blank" rel="nofollow">Fishing Maui</a></p>
+		<p><a href="http://www.whalersvillage.com" target="_blank" rel="nofollow">Whaler's Village</a></p>
+		<p><a href="http://www.mauifilmfestival.com/mffw_index.php" target="_blank" rel="nofollow">Maui Film Festival</a></p>
+		<p><a href="http://www.mauifridays.com/lahaina/" target="_blank" rel="nofollow">Maui 2nd Friday Lahaina</a></p>
+		<p class="f-lp"><a href="http://www.rotaryclublahaina.org" target="_blank" rel="nofollow">Lahaina Rotary Club</a></p>
+        
+	</div>
+	<div class="col-lg-4 col-md-4 text-center"><h1 style="line-height:1;margin-top:0px;text-align:center"><a href="http://www.moraga.ca.us" target="_blank">Moraga</a></h1>
+		<p><a href="http://www.moragachamber.org" target="_blank" rel="nofollow">Moraga Chamber Of Commerce</a></p>
+		<p><a href="http://www.shopmoragafirst.com" target="_blank" rel="nofollow">Shop Moraga First</a></p>
+		<p><a href="http://www.stmarys-ca.edu" target="_blank" rel="nofollow">Saint Mary's College</a></p>
+		<p><a href="http://www.co.contra-costa.ca.us" target="_blank" rel="nofollow">Contra Costa County</a></p>
+		<p><a href="http://www.lamorindacert.org" target="_blank" rel="nofollow">Cert - Lamorinda Area</a></p>
+		<p><a href="http://www.facebook.com/pages/Moraga-Lions-Club/115105611880918/" target="_blank" rel="nofollow">Moraga Lions Club</a></p>
+		<p><a href="http://www.lamorindaweekly.com" target="_blank" rel="nofollow">Moraga Local Newspaper</a></p>
+		<p><a href="http://www.lamorindaweb.com" target="_blank" rel="nofollow">Lamorinda Web</a></p>
+		<p><a href="http://www.moragahistory.org" target="_blank" rel="nofollow">Moraga Historical Society</a></p>
+		<p><a href="http://www.mofd.org" target="_blank" rel="nofollow">Moraga-Orinda Fire Dept.</a></p>
+		<p><a href="http://www.moragacitizensnetwork.org" target="_blank" rel="nofollow">Moraga Citizens Network</a></p>
+		<p><a href="http://www.sustainablemoraga.org" target="_blank" rel="nofollow">Sustainable Moraga</a></p>
+		<p><a href="http://www.moragajuniors.org" target="_blank" rel="nofollow">Moraga Junior Women's Club</a></p>
+		<p><a href="http://www.moragamovers.org" target="_blank" rel="nofollow">Moraga Senior Citizens</a></p>
+		<p class="f-lp"><a href="http://www.moragahacienda.com" target="_blank" rel="nofollow">Hacienda De Los Flores</a></p>
+        
+	</div>
+    </div>
+                <p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    
+    <!-- Merch Coupon Pop -->
+     <div id="couponModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Current Specials!</h2>
+        		<p class="text-center">
+                <br/><img src="img/coupon.jpg" alt="Special Offer Coupon" name="5amaui" width="60%">
+                </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- Retail Coupon Pop -->
+     <div id="retailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Lahaina Retail Coupons</h2>
+        		<p class="text-center">
+                <br/>
+                <a href="img/lahainaretailcoups.jpg" target="_blank">
+                <img src="img/lahainaretailcoups.jpg" alt="Lahaina Retail Coupons" name="5amaui" width="60%"></a>
+                </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+	<!-- Retail MO Coupon Pop -->
+     <div id="retailmoModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Moraga Retail Coupons</h2>
+        		<p class="text-center">
+                <br/>
+                <a href="img/moretailcoups.jpg" target="_blank">
+                <img src="img/moretailcoups.jpg" alt="Moraga Retail Coupons" name="5amoraga" width="60%"></a>
+                </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!-- Constant Contact Form -->
+     <div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Join Our Email List</h2>
+        		<p class="text-center">
+               <!--Begin CTCT Sign-Up Form-->
+<!-- EFD 1.0.0 [Thu Mar 24 18:23:39 EDT 2016] -->
+<link rel='stylesheet' type='text/css' href='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/css/signup-form.css'>
+<div class="ctct-embed-signup" style="font: 16px Helvetica Neue, Arial, sans-serif; font: 1rem Helvetica Neue, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased;">
+   <div style="color:#5b5b5b; background-color:#e8e8e8; border-radius:5px;">
+       <span id="success_message" style="display:none;">
+           <div style="text-align:center;">Thanks for signing up!</div>
+       </span>
+       <form data-id="embedded_signup:form" class="ctct-custom-form Form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
+           <h2 style="margin:0;">Sign up to find out when we're having events!</h2>
+           <p>Sign up to get event news, giveaways and updates delivered to your inbox.</p>
+           <!-- The following code must be included to ensure your sign-up form works properly. -->
+           <input data-id="ca:input" type="hidden" name="ca" value="7ef583de-bd2b-43da-9a4e-543891afcfeb">
+           <input data-id="source:input" type="hidden" name="source" value="EFD">
+           <input data-id="required:input" type="hidden" name="required" value="list,email">
+           <input data-id="url:input" type="hidden" name="url" value="">
+           <p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required">Email Address</label> <input data-id="Email Address:input" type="text" name="email" value="" maxlength="80"></p>
+           <p data-id="First Name:p" ><label data-id="First Name:label" data-name="first_name">First Name</label> <input data-id="First Name:input" type="text" name="first_name" value="" maxlength="50"></p>
+                      <p data-id="Lists:p" ><label data-id="Lists:label" data-name="list" class="ctct-form-required">Email Lists</label><div><input data-id="Lists:input" type="checkbox" name="list_0" value="15"><span data-id="Lists:span">FOSTER CITY Customer List</span></div><div><input data-id="Lists:input" type="checkbox" name="list_1" value="3"><span data-id="Lists:span">Foster City, CA</span></div><div><input data-id="Lists:input" type="checkbox" name="list_2" value="14"><span data-id="Lists:span">LAHAINA Customer List</span></div><div><input data-id="Lists:input" type="checkbox" name="list_3" value="5"><span data-id="Lists:span">Lahaina, Maui, Hawaii</span></div><div><input data-id="Lists:input" type="checkbox" name="list_4" value="13"><span data-id="Lists:span">MORAGA Customer List</span></div><div><input data-id="Lists:input" type="checkbox" name="list_5" value="8"><span data-id="Lists:span">Moraga, CA</span></div></p>
+           <button type="submit" class="Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up</button>
+       	<div><p class="ctct-form-footer">By submitting this form, you are granting: 5A Rent-A-Space, http://www.5aspace.com permission to email you. You may unsubscribe via the link found at the bottom of every email.  (See our <a href="http://www.constantcontact.com/legal/privacy-statement" target="_blank">Email Privacy Policy</a> for details.) Emails are serviced by Constant Contact.</p></div>
+       </form>
+   </div>
+</div>
+<script type='text/javascript'>
+   var localizedErrMap = {};
+   localizedErrMap['required'] = 		'This field is required.';
+   localizedErrMap['ca'] = 			'An unexpected error occurred while attempting to send email.';
+   localizedErrMap['email'] = 			'Please enter your email address in name@email.com format.';
+   localizedErrMap['birthday'] = 		'Please enter birthday in MM/DD format.';
+   localizedErrMap['anniversary'] = 	'Please enter anniversary in MM/DD/YYYY format.';
+   localizedErrMap['custom_date'] = 	'Please enter this date in MM/DD/YYYY format.';
+   localizedErrMap['list'] = 			'Please select at least one email list.';
+   localizedErrMap['generic'] = 		'This field is invalid.';
+   localizedErrMap['shared'] = 		'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
+   localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
+   localizedErrMap['state_province'] = 'Select a state/province';
+   localizedErrMap['selectcountry'] = 	'Select a country';
+   var postURL = 'https://visitor2.constantcontact.com/api/signup';
+</script>
+<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
+<!--End CTCT Sign-Up Form-->
+               </p>
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+        	</p>
+            </div>
+        </div>
+        </div>
+    </div>
+      <!-- Contact Us -->
+    <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body text-center">
+        		<h2>5A Foster City, CA</h2>
+        <img src="img/fc.jpg" alt="Foster City, CA" name="5afc" width="50%">
+		<p><i class="icon-md1 ion-ios-telephone-outline"> <a href="tel:1-650-338-0016">(650) 338-0016</a></i></p>
+		<p><i class="icon-md1 ion-ios-email-outline"> <a href="mailto:foster_city@5aspace.com" target="_blank">foster_city@5aspace.com</a></i></p>
+        <p><i class="icon-md1 ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=1221+east%20hillsdale+blvd%2C+foster+city%2C+CA+94404" target="_blank">1221 E. Hillsdale Blvd Foster City, CA 94404</a></i></p>
+<h2>5A Moraga, CA</h2>
+        <img src="img/mo.jpg" alt="Moraga, CA" name="5amo" width="50%">
+		<p><i class="icon-md1 ion-ios-telephone-outline"> <a href="tel:1-925-643-2024">(925) 643-2024</a></i></p>
+		<p><i class="icon-md1 ion-ios-email-outline"> <a href="mailto:moraga@5aspace.com" target="_blank">moraga@5aspace.com</a></i></p>
+        <p><i class="icon-md1 ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=455+moraga+Road%2C+moraga%2C+CA+94556" target="_blank">455 Moraga Rd Ste F Moraga, CA 94556</a></i></p>
+<h2>5A Lahaina, HI</h2>
+        <img src="img/maui.jpg" alt="Lahaina, HI" name="5amaui" width="50%">
+		<p><i class="icon-md1 ion-ios-telephone-outline"> <a href="tel:1-808-745-1616">(808) 745-1616</a></i></p>
+		<p><i class="icon-md1 ion-ios-email-outline"> <a href="mailto:lahaina@5aspace.com" target="_blank">lahaina@5aspace.com</a></i></p>
+        <p><i class="icon-md1 ion-ios-location-outline"> <a href="http://maps.google.com/maps?q=3600+Lower+Honoapiilani+Road%2C+Lahaina%2C+HI+96761" target="_blank">3600 L Honoapiilani Rd Lahaina, HI 96761</a></i></p>
+<h2>5A Corporate Office</h2>
+        <img src="img/5alogo1.png" alt="5A Corporate Office" name="5aoffice" width="50%">
+		<p><i class="icon-md1 ion-ios-telephone-outline"> <a href="tel:1-808-745-1616">(800) 527-7223</a></i></p>
+		
+        		<p><br/>
+                
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">CLOSE <i class="ion-android-close"></i></button>
+                </p>
+        	</div>
+        </div>
+        </div>
+    </div>    
+    <!--scripts loaded here from cdn for performance -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" language="javascript">
+
+// Rent Online
+      function ShowRentOnline(id)
+      {
+          var strUrl = "https://www.e-storageonline.com/5ASelfStorage/Contents/AllLocations.aspx?ReqPage=RENT&LocId=" + id;
+          var x_left = (screen.width)/2 - 450;
+          var y_top = (screen.height)/2 - 340;
+          var WinOpen = window.open(strUrl,"eStorageOnline","width=850px, height=650px, left=" + x_left + ", top=" + y_top + ", help=no, location=no, directories=no, resizable=no, status=no, scrollbars=yes, toolbar=no, menubar=no");
+      }
+
+// Reserve A Unit
+      function ShowReserveOnline(id)
+      {
+          var strUrl = "https://www.e-storageonline.com/5ASelfStorage/Contents/AllLocations.aspx?ReqPage=RESV&LocId=" + id;
+          var x_left = (screen.width)/2 - 450;
+          var y_top = (screen.height)/2 - 340;
+          var WinOpen = window.open(strUrl,"eStorageOnline","width=850px, height=650px, left=" + x_left + ", top=" + y_top + ", help=no, location=no, directories=no, resizable=no, status=no, scrollbars=yes, toolbar=no, menubar=no");
+     }
+
+// Make Payment
+      function ShowPayOnline(id)
+      {
+          var strUrl = "https://www.e-storageonline.com/5ASelfStorage/PayOnline/Login.aspx?LocId=" + id;
+          var x_left = (screen.width) / 2 - 450;
+          var y_top = (screen.height) / 2 - 340;
+          var WinOpen = window.open(strUrl, "newwin", "width=850px, height=650px, left=" + x_left + ", top=" + y_top + ", help=no, location=no, directories=no, resizable=no, status=no, scrollbars=yes, toolbar=no, menubar=no");
+      }
+</script>
+  </body>
+</html>
