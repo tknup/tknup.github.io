@@ -7,6 +7,7 @@ div.calc {
 #unitsizecalc table tbody tr td.calc input.sizecalc {
 	width: 35%;
 	float: right;
+	color: black;
 }
 .unitpricingtable i {
 	padding-right: 8px;
@@ -101,6 +102,7 @@ table.unitpricingtable tbody tr td {
 #unitsizecalc table tbody tr td.calc input.sizecalc {
 	width: 40%;
 	float: right;
+	color: black;
 }
 .unitpricingtable h5 {
 	font-size: .55em;
@@ -167,6 +169,7 @@ table.unitpricingtable tbody tr td {
 #unitsizecalc table tbody tr td.calc input.sizecalc {
 	width: 40%;
 	float: right;
+	color: black;
 }
 .unitpricingtable tbody tr td {
 	padding: 0;
