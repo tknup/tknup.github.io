@@ -82,8 +82,8 @@ table.unitpricingtable tbody tr td {
 	font-size: .9em!important;
         width: 100%;
         float: left;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+        /*font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;*/
 }
 #unitsizecalc table tbody tr td.calc input .buttoncalc {
         float: left!important;
@@ -175,8 +175,8 @@ table.unitpricingtable tbody tr td {
 	padding: 0;
 }
 #unitsizecalc td {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+        /*font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;*/
         font-size: .9em;
 }
 .btn {
