@@ -216,6 +216,7 @@ INTRO
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-backface-visibility: hidden;
+  text-shadow: 1px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 @media (max-width: 767px) {
   #intro .item h2 {
@@ -246,6 +247,14 @@ ABOUT
 =====================
 
 */
+.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../img/home.jpg') !important;
+}
 .progress-title {
   text-align: left;
   font-weight: 300;
